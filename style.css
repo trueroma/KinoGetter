@@ -29,7 +29,6 @@ section {
 .search-form {
     font-size: 1.2rem;
     height: 4rem;
-    /*min-height: 40px;*/
     width: 50%;
     border: solid #012840 .1em;
     outline: none;
@@ -39,14 +38,15 @@ section {
     width: 100%;
     height: auto;
     min-height: 800px;
-    display: grid;
+    display: block;
+/*    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1vw;
-    margin-bottom: 20vh;
+    grid-gap: 1vw; */
+    margin-bottom: 10vh;
 }
 @media (max-width: 1500px) {
     .movies {
-        grid-template-columns: repeat(2, 1fr);
+        /*grid-template-columns: repeat(2, 1fr);*/
     }
 }
 @media (max-width: 1000px) {
@@ -55,6 +55,8 @@ section {
         font-size: 3rem;
     }
     .movies {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1vw;
     }
 }
